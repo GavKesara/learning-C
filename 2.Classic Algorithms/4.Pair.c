@@ -1,5 +1,6 @@
 //Closet Pair problem(2D) - Brute force - not suitable for larger arrays such as with 1000 points
 //you have to find the 2 points which are closed to each other.
+// use -lm flag when compiling
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
