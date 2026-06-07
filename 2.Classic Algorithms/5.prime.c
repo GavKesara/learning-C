@@ -20,7 +20,7 @@ int *create_sieves(int size){
     if(size>0){is_prime[0]=0;}
     if(size>1){is_prime[1]=0;}
 
-    return is_prime;
+    return is_prime; //returns generated array {1,1,1,1,1,...}
 
 }
 
