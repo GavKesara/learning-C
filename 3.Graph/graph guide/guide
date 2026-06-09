@@ -1,0 +1,20 @@
+graphing in C is different to Cpp
+
+C          |      C++
+no Classes |    Supported clases
+
+referance look ADTgraph.cpp 
+
+
+method->
+
+initalises a list array of size numVertices.  {ver1,ver2,ver3,...}
+addEdge function pushes the new value into the vertice value using list pushing.
+
+seems easy enough.
+
+a list struct needs to be implemented which connects values across a vertice.
+and the list values need to be included in a list array from which we need to access it.
+
+looks like we dont necessarily need the list to go both ways.
+review ADTlists 
