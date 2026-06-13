@@ -1,6 +1,7 @@
 /*
 C code to implement a graph data structure in C 
 a data stucture which contains a list structure in an array.
+
 */
 
 #include<stdio.h>
