@@ -18,7 +18,7 @@ list *create_list(int data){
     list *head=malloc(sizeof(list)); //creates a list pointer
     if(head==NULL){
         printf("Error allocating memory.");
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE); //exit cmd for early exit if memory allocation fails
     } 
     head->data=data;
     head->next=NULL; //assigns null pointer to next
@@ -62,12 +62,12 @@ void free_memory(list *Array[],int size){
 int main(void){
     int numVertices=5;
     list **Graph=calloc(numVertices,sizeof(list*)); //double pointer (list**) for dynamic array of pointers
-    addEdge(0,Graph,7);                            //calloc instead of malloc because of array init
-    addEdge(0,Graph,14);
-    addEdge(1,Graph,18);
-    addEdge(0,Graph,21);
-    addEdge(1,Graph,10);
-    addEdge(3,Graph,10);
+    addEdge(0,Graph,1);                            //calloc instead of malloc because of array init
+    addEdge(0,Graph,2);
+    addEdge(1,Graph,3);
+    addEdge(0,Graph,3);
+    addEdge(1,Graph,2);
+    addEdge(3,Graph,0);
 
     int i;
     printf("-----Printing Graph----\n");
