@@ -18,3 +18,11 @@ and the list values need to be included in a list array from which we need to ac
 
 looks like we dont necessarily need the list to go both ways.
 review ADTlists 
+
+In this part we will be using to store Graphs as in a vertice and its links.
+for ex :-
+    3           here the used addEdge cmds are as follows;
+   /           
+  0   1          addEdge(0,Graph,2) -> vertice 0 is linked to 2 | vertice 2 is linked to 0
+   \ /           addEdge(0,Graph,3) -> vertice 0 is linked to 3 | vertice 3 is linked to 0
+    2            addEdge(1,Graph,2) -> vertice 1 is linked to 2 | vertice 2 is linked to 1
