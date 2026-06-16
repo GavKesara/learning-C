@@ -26,3 +26,32 @@ for ex :-
   0   1          addEdge(0,Graph,2) -> vertice 0 is linked to 2 | vertice 2 is linked to 0
    \ /           addEdge(0,Graph,3) -> vertice 0 is linked to 3 | vertice 3 is linked to 0
     2            addEdge(1,Graph,2) -> vertice 1 is linked to 2 | vertice 2 is linked to 1
+
+
+Eulerian Path (Graph Theory)
+===================================
+
+* In Eulerian path theory, the "degree" of a vertex is the number of edges incident to that vertex, with a loop contributing two to the degree.
+* An undirected graph has an Eulerian path if and only if;
+
+        ->All vertices with a non-zero degree belong to a single connected component. 
+
+        ex:- 3 - 0 - 2    1   ,contains an Eulerian path. 
+
+        ->Exactly zero or two vertices have an odd degree (number of connected edges).
+
+
+eulerian path ->  3 - 0 - 2 - 1             eulerian cycle ->          3 (2) 
+ (degree)         1   2   2   1                                       / \
+                                                                 (2) 0   1 (2)
+                                                                      \ /
+                                                                       2 (2)
+
+
+to ensure that a graph contains an Eulerian path we need to use DFS ->  
+
+*situations like in 6 vertices for ex-
+
+      1          5
+     / \        / \     doesn't contain an Eulerian path but degrees of all elements are 2.
+    2 - 3      4 - 6
