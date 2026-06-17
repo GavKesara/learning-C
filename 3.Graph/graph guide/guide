@@ -27,6 +27,7 @@ for ex :-
    \ /           addEdge(0,Graph,3) -> vertice 0 is linked to 3 | vertice 3 is linked to 0
     2            addEdge(1,Graph,2) -> vertice 1 is linked to 2 | vertice 2 is linked to 1
 
+*Edge -> The fundamental element that represents a connection or a relationship between 2 points or vertices.
 
 Eulerian Path (Graph Theory)
 ===================================
@@ -55,3 +56,6 @@ to ensure that a graph contains an Eulerian path we need to use DFS ->
       1          5
      / \        / \     doesn't contain an Eulerian path but degrees of all elements are 2.
     2 - 3      4 - 6
+
+
+    *modifing files to take in graph data as an input.

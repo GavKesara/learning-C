@@ -1,0 +1,46 @@
+create "graph.txt" file containing the data in the same folder as the program and run the program.
+
+case -1 
+
+4 4
+0 1
+1 2
+2 3
+3 0
+
+output -> fully connected, contains Eulerian cycle
+
+case -2
+
+4 3
+0 2
+1 2
+3 0
+
+output -> fully connected, contains Eulerian path
+
+case -3
+
+4 2
+0 1
+2 3
+
+output -> split to seperate components
+
+case -4
+
+4 3
+0 1
+1 2
+0 2
+
+output ->  fully connected, contains an Eulerian cycle
+
+case -5
+
+4 3
+0 1
+0 2
+0 3
+
+output -> fully connected, doesnt contain an Eulerian path

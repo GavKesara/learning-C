@@ -49,6 +49,11 @@ typedef struct list{
     struct list *next;
 }list;
 
+//data reader struct
+typedef struct {
+    int u,v;
+}Edge;
+
 
 //function to create a list structure
 list *create_list(int data){
@@ -209,17 +214,35 @@ void Eulerian(list* Array[],int size){
     free(degree);
 }
 
+
+
 int main(void){
-    int numVertices=4;
+
+    FILE *file=fopen("graph.txt","r");
+    if(file==NULL){
+        printf("Unable to find file.\n");
+        return EXIT_FAILURE;  //program terminates with error 1.
+    }
+    int numVertices;
+    int edge_count;
+    fscanf(file,"%d %d\n",&edge_count,&numVertices);
+
+    Edge *edge_data=calloc(edge_count,sizeof(Edge));
+    for(int i=0;i<edge_count;i++){
+        fscanf(file,"%d %d\n",&edge_data[i].u,&edge_data[i].v);
+    }
 
     list **Graph=calloc(numVertices,sizeof(list*));
     if(Graph==NULL){
         printf("Failed to allocate graph wrapper!\n");
         return EXIT_FAILURE;
     }
-    add_Edge(0, Graph, 1);
-    add_Edge(0, Graph, 2);
-    add_Edge(0, Graph, 3);    
+
+    for(int i=0;i<edge_count;i++){
+        add_Edge(edge_data[i].u,Graph,edge_data[i].v);
+    }
+    free(edge_data);
+      
     printf("-----Printing Graph-----\n");
     print_Graph(Graph,numVertices);
 
