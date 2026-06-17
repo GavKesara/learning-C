@@ -1,43 +1,9 @@
 /*
  C code to implement a Eurelian path in C
  code taken from ADTgraph.c
+
+ also checks graph connection
 */
-
-/* test case 01 -
-    add_Edge(0, Graph, 1);
-    add_Edge(1, Graph, 2);
-    add_Edge(2, Graph, 3);
-    add_Edge(3, Graph, 0);
-
-    output -> fully connected, contains Eulerian cycle
-    
-    test case 02 - 
-    add_Edge(0, Graph, 2);
-    add_Edge(1, Graph, 2);
-    add_Edge(3, Graph, 0);
-    
-    output -> fully connected, contains Eulerian path
-    
-    test case 03 -
-    add_Edge(0, Graph, 1);
-    add_Edge(2, Graph, 3);
-    
-    output -> split to seperate components
-    
-    test case 04 -
-    add_Edge(0, Graph, 1);
-    add_Edge(1, Graph, 2);
-    add_Edge(2, Graph, 0);
-    
-    output ->  fully connected, contains an Eulerian cycle
-    
-    test case 05 -
-    add_Edge(0, Graph, 1);
-    add_Edge(0, Graph, 2);
-    add_Edge(0, Graph, 3);
-    
-    output -> fully connected, doesnt contain an Eulerian path
-    */
 
 #include<stdio.h>
 #include<stdlib.h>
