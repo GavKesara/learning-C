@@ -1,0 +1,19 @@
+Minimum Spanning Tree problem.
+
+*Think of connecting distant cities with cables or connecting train stations in the most efficient way possible.
+
+Rules -
+
+1. Connected. must be able to reach any vertex from another.
+2. Undirected. 
+3. Weighted. Every edge has a cost or weight associated to it.
+
+
+Method - 
+
+Start by setting up a simple graph input and draw program.
+
+As done by testing data. it requires a connection checking program that checks if all vertices are reached.
+then another one to check if the total weight is minimum.
+
+basically, we have the edges given as input our object is to find the path which has the minimum weight.

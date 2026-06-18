@@ -147,6 +147,7 @@ int main(void){
     for(int i=0;i<numEdges;i++){
         fscanf(file,"%d %d %d\n",&graph_data[i].u,&graph_data[i].v,&graph_data[i].dis);
     }
+    fclose(file);
 
     list **Graph=calloc(numVertices,sizeof(list));
     for(int i=0;i<numEdges;i++){
